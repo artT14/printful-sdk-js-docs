@@ -3,44 +3,51 @@ sidebar_position: 1
 ---
 # Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
-
 ## Getting Started
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Get started by **installing the package**.
 
 ### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
+- [Node.js](https://nodejs.org/en/download/) version 16.16 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+## Installing the package
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+Install the package by running the following command:
 
 ```bash
-npm init docusaurus@latest my-website classic
+npm i printful-sdk-js
 ```
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+The command also installs all necessary dependencies you need to run printful-sdk-js.
 
-## Start your site
+## Example Usage
 
-Run the development server:
+Basic Example in Code:
 
-```bash
-cd my-website
-npm run start
+```js
+import {createPrintfulStoreClient} from "printful-sdk-js";
+
+const STORE_TOKEN = "YOUR STORE TOKEN";
+
+const client = createPrintfulStoreClient(STORE_TOKEN);
+
+// Must call within an async block
+const {products, error} = await client.catalog.getAllProducts();
+
+if (error){
+	console.log(error);
+}
+else{
+	console.table(products);
+}
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### Getting an access token
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Read the following guide on Prinful API Docs on [Authentication](https://developers.printful.com/docs/?_gl=1*1sbmfdi*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4ODc3OTM1NC4xMi4xLjE2ODg3ODEwMzYuMTAuMC4w#tag/Authorization).
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+> **IMPORTANT NOTE:** It is advised to keep your API keys safe by storing them in a .env file and importing it into your project using a tool like **[dotenv](https://www.npmjs.com/package/dotenv)** or any equivalent you may have available in your project.
