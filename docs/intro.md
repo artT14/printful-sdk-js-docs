@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Tutorial Intro
+# Intro
 
 ## Getting Started
 
@@ -36,10 +36,10 @@ const STORE_TOKEN = "YOUR STORE TOKEN";
 const client = createPrintfulStoreClient(STORE_TOKEN);
 
 // Must call within an async block
-const {products, error} = await client.catalog.getAllProducts();
+const {result: products, error} = await client.catalog.getAllProducts();
 
 if (error){
-	console.log(error);
+	console.error(error);
 }
 else{
 	console.table(products);
