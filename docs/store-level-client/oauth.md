@@ -6,15 +6,17 @@ sidebar_position: 1
 
 OAuth API allows receiving data for token.
 
-**PrintfulStoreClient.oauth**
+`PrintfulStoreClient.oauth`
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#tag/OAuth-API)
+
+[**Source**](https://github.com/artT14/printful-sdk-js/blob/main/src/lib/oauth.ts)
 
 ---
 
 ## Get scopes for token
 
-**PrintfulStoreClient.oauth.getScopes()**
+`PrintfulStoreClient.oauth.getScopes()`
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#operation/getScopes)
 
