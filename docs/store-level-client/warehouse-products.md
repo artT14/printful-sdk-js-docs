@@ -51,3 +51,9 @@ Returns warehouse product data by ID
 **Arguments**
 
 `id` - Product ID
+
+**Example Usage:**
+
+```js
+// Soon to be added
+```
