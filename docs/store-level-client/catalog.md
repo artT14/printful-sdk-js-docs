@@ -16,48 +16,186 @@ Catalog API allows receiving data for a substantial catalog of blank Products an
 
 ## Get Products
 
-`PrintfulStoreClient.catalog.getAllProducts()`
-
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#operation/getProducts)
 
 Returns list of blank Products available in the Printful Catalog.
 
-## Get Variant
+**Method**
 
-`PrintfulStoreClient.catalog.getVariant()`
+`PrintfulStoreClient.catalog.getAllProducts()`
+
+**Arguments**
+
+*None*
+
+**Example Usage:**
+
+```js
+import {createPrintfulStoreClient} from "printful-sdk-js";
+
+// ASYNC BLOCK
+const client = createPrintfulStoreClient("STORE_TOKEN");
+const {result: products, error} = await client.catalog.getAllProducts();
+// ASYNC BLOCK
+
+if(error){
+	console.error(error);
+}else{
+	console.table(products);
+}
+```
+
+## Get Variant
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#operation/getVariantById)
 
 Returns information about a specific Variant and its Product.
 
-## Get Product
+**Method**
 
-`PrintfulStoreClient.catalog.getProduct()`
+`PrintfulStoreClient.catalog.getVariant(id: number)`
+
+**Arguments**
+
+`id` - Product ID.
+
+**Example Usage:**
+
+```js
+import {createPrintfulStoreClient} from "printful-sdk-js";
+
+// ASYNC BLOCK
+const client = createPrintfulStoreClient("STORE_TOKEN");
+const {result: variant, error} = await client.catalog.getVariant(4018);
+// ASYNC BLOCK
+
+if(error){
+	console.error(error);
+}else{
+	console.log(variant);
+}
+```
+
+## Get Product
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#operation/getProductById)
 
 Returns information about a specific product and a list of variants for this product.
 
-## Get Product Size Guide
+**Method**
 
-`PrintfulStoreClient.catalog.getSize()`
+`PrintfulStoreClient.catalog.getProduct(id: number)`
+
+**Arguments**
+
+`id` - Product ID.
+
+**Example Usage:**
+
+```js
+import {createPrintfulStoreClient} from "printful-sdk-js";
+
+// ASYNC BLOCK
+const client = createPrintfulStoreClient("STORE_TOKEN");
+const {result: product, error} = await client.catalog.getProduct(71);
+// ASYNC BLOCK
+
+if(error){
+	console.error(error);
+}else{
+	console.log(product);
+}
+```
+
+## Get Product Size Guide
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#operation/getProductSizeGuideById)
 
 Returns information about the size guide for a specific product.
 
-## Get Categories
+**Method**
 
-`PrintfulStoreClient.catalog.getAllCategories()`
+`PrintfulStoreClient.catalog.getSize()`
+
+**Arguments**
+
+`id` - Product ID.
+
+**Example Usage:**
+
+```js
+import {createPrintfulStoreClient} from "printful-sdk-js";
+
+// ASYNC BLOCK
+const client = createPrintfulStoreClient("STORE_TOKEN");
+const {result: sizeGuide, error} = await client.catalog.getSize(71);
+// ASYNC BLOCK
+
+if(error){
+	console.error(error);
+}else{
+	console.log(sizeGuide);
+}
+```
+
+## Get Categories
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#operation/getCategories)
 
 Returns list of Catalog Categories available in the Printful.
 
-## Get Category
+**Method**
 
-`PrintfulStoreClient.catalog.getCategory()`
+`PrintfulStoreClient.catalog.getAllCategories()`
+
+**Arguments**
+
+*None*
+
+**Example Usage:**
+
+```js
+import {createPrintfulStoreClient} from "printful-sdk-js";
+
+// ASYNC BLOCK
+const client = createPrintfulStoreClient("STORE_TOKEN");
+const {result: categories, error} = await client.catalog.getCategories();
+// ASYNC BLOCK
+
+if(error){
+	console.error(error);
+}else{
+	console.log(categories);
+}
+```
+
+## Get Category
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#operation/getCategoryById)
 
 Returns information about a specific category.
+
+**Method**
+
+`PrintfulStoreClient.catalog.getCategory(id: number)`
+
+**Arguments**
+
+`id` - Category ID
+
+**Example Usage:**
+
+```js
+import {createPrintfulStoreClient} from "printful-sdk-js";
+
+// ASYNC BLOCK
+const client = createPrintfulStoreClient("STORE_TOKEN");
+const {result: category, error} = await client.catalog.getCategory();
+// ASYNC BLOCK
+
+if(error){
+	console.error(error);
+}else{
+	console.log(category);
+}
+```

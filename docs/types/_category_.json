@@ -1,8 +1,0 @@
-{
-  "label": "Typechecking",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Built-in types for static type-checking in TypeScript."
-  }
-}

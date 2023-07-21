@@ -16,13 +16,20 @@ OAuth API allows receiving data for token.
 
 ## Get scopes for token
 
-`PrintfulStoreClient.oauth.getScopes()`
-
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*89vqs2*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4OTgwNDI5My4zMC4wLjE2ODk4MDQyOTMuNjAuMC4w#operation/getScopes)
 
 Returns a list of scopes associated with the token.
 
-Example Usage:
+**Method**
+
+`PrintfulStoreClient.oauth.getScopes()`
+
+**Arguments**
+
+*None*
+
+**Example Usage:**
+
 ```js
 import {createPrintfulStoreClient} from "printful-sdk-js";
 
