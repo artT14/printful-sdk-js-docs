@@ -22,11 +22,11 @@ Returns list of blank Products available in the Printful Catalog.
 
 **Method**
 
-`PrintfulStoreClient.catalog.getAllProducts()`
+`PrintfulStoreClient.catalog.getAllProducts(category_id?: string)`
 
 **Arguments**
 
-*None*
+`category_id` - A comma-separated list of Category IDs of the Products that are to be returned
 
 **Example Usage:**
 
