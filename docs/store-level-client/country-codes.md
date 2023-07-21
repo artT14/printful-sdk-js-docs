@@ -16,8 +16,21 @@ All state/country codes that Printful accepts can be listed by this API.
 
 ## Retrieve country list
 
-`PrintfulStoreClient.countryCodes.getCountryList()`
-
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*1sbmfdi*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4ODc3OTM1NC4xMi4xLjE2ODg3ODEwMzYuMTAuMC4w#operation/getCountries)
 
 Returns list of countries and states that are accepted by the Printful.
+
+**Method**
+
+`PrintfulStoreClient.countryCodes.getCountryList()`
+
+**Arguments**
+
+*None*
+
+
+**Example Usage:**
+
+```js
+// Soon to be added
+```

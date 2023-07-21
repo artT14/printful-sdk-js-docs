@@ -27,8 +27,11 @@ Returns list of Sync Product objects from your store.
 **Arguments**
 
 *Optional* `offset` - Result set offset
+
 *Optional* `limit` - Number of items per page (max 100)
+
 *Optional* `status` - Filter by item status (synced/unsynced/all). If only some of the variants are synced,the product is returned by both unsynced and synced filters
+
 *Optional* `search` - Product search needle
 
 **Example Usage:**
@@ -111,6 +114,7 @@ Modifies an existing Sync Variant.
 **Arguments**
 
 `id` - Sync Variant ID (integer) or External ID (if prefixed with `@`)
+
 `sync_variant_info` - Information about the Sync Variant
 
 **Example Usage:**
