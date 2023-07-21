@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/javascript.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://printful-sdk-js.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -74,7 +74,7 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/artT14/printful-sdk-js-docs',
+            href: 'https://github.com/artT14/printful-sdk-js',
             label: 'GitHub',
             position: 'right',
           },
@@ -123,7 +123,11 @@ const config = {
               // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/artT14/printful-sdk-js-docs',
+                href: 'https://github.com/artT14/printful-sdk-js',
+              },
+              {
+                label: 'NPM',
+                href: 'https://www.npmjs.com/package/printful-sdk-js',
               },
             ],
           },
