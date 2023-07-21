@@ -16,28 +16,61 @@ You can use this API to gather information about your stores.
 
 ## Change packing slip
 
-`PrintfulStoreClient.storeInformation.changePackingSlip()`
-
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*1sbmfdi*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4ODc3OTM1NC4xMi4xLjE2ODg3ODEwMzYuMTAuMC4w#operation/changePackingSlip)
 
 Modifies packing slip information of the currently authorized Printful store.
 
+**Method**
 
+`PrintfulStoreClient.storeInformation.changePackingSlip(new_packing_slip: PackingSlip)`
+
+**Arguments**
+
+`new_packing_slip` - Packing slip information
+
+**Example Usage:**
+
+```js
+// Soon to be added
+```
 
 ## Get basic information about stores
-
-`PrintfulStoreClient.storeInformation.getAllStoresInfo()`
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*1sbmfdi*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4ODc3OTM1NC4xMi4xLjE2ODg3ODEwMzYuMTAuMC4w#operation/getStores)
 
 Get basic information about stores depending on the token access level
 
+**Method**
 
+`PrintfulStoreClient.storeInformation.getAllStoresInfo(offset?: number, limit?: number)`
+
+**Arguments**
+
+*Optional* `offset` - Offset for query
+*Optional* `limit`  - Limit for query
+
+**Example Usage:**
+
+```js
+// Soon to be added
+```
 
 ## Get basic information about a store
-
-`PrintfulStoreClient.storeInformation.getStoreInfo()`
 
 [**Printful API Reference**](https://developers.printful.com/docs/?_gl=1*1sbmfdi*_ga*NDMzMTM2Mjk0LjE2ODcyMzU3MDc.*_ga_EZ4XVRL864*MTY4ODc3OTM1NC4xMi4xLjE2ODg3ODEwMzYuMTAuMC4w#operation/getStore)
 
 Get basic information about a store based on provided ID
+
+**Method**
+
+`PrintfulStoreClient.storeInformation.getStoreInfo(id: number)`
+
+**Arguments**
+
+`id` - Store ID
+
+**Example Usage:**
+
+```js
+// Soon to be added
+```
